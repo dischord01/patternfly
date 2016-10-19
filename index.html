@@ -45,6 +45,9 @@
           </div>
         </nav>
         <!-- AWS SSH Key -->
+        <div class="row">
+        <div class="col-md-4"></div>
+        <!-- Start Box -->
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
           <div class="card-pf card-pf-view ">
           <div class="card-pf-body">
@@ -62,16 +65,30 @@
                  <button class="btn btn-primary btn-lg" onclick="window.open('container.pem')" type="submit">Download</button>
               </div>
             </div>
-            <p class="card-pf-info text-center"><strong>Created On</strong> 2016-03-01 02:00 AM 
-            <br/>Expires 12pm Tonight
-            <br>ssh as ec2-user</p>
+            <p class="card-pf-info text-center"><strong>Created On</strong> 2016-10-25 02:00 AM 
+            <br/>Expires 12pm Tonight</p>
           </div>
           <div class="card-pf-view-checkbox">
             <input type="checkbox">
           </div>
         </div>
         </div>
+        <!-- End Box -->
 
+        <!-- Start Info -->
+        </div>
+        <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <span class="label label-default">chmod 0400 ~/path/to/container.pem 
+          </span>
+          <br/>
+          <span class="label label-default">ssh -i ~/path/to/container.pem ec2-user@student.#.redhat-fierce.io 
+          </span>
+        </div>
+        <!-- End Info -->
+
+        
         <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')</script>
 
